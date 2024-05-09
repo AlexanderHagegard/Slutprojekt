@@ -1,0 +1,31 @@
+.site-header,
+.hero,
+.banner,
+.main,
+.article-news,
+.club-news,
+.site-footer {
+    display: grid;
+    grid-template-columns: var(--grid-container);
+}
+
+.site-header__inner,
+.hero__inner,
+.banner__inner,
+.main__inner,
+.article-news__inner,
+.club-news__inner, 
+.site-footer__inner {
+    grid-column: inner;
+}
+
+.main__inner,
+.article-news__inner,
+.site-footer__inner {
+    padding: var(--section-padding) 0;
+}
+
+.section__title {
+    text-align: center;
+    margin-bottom: var(--gap-content);
+}

@@ -1,30 +1,33 @@
 @mixin default(
-    $background: var(--color-accent-400),
-    $color: var(--color-primary-400),
+    $background: var(--color-accent),
+    $color: var(--color-white),
     $border-radius: var(--border-radius) 
     ) {
         background-color: $background;
         color: $color;
-        padding: 1rem 2rem;
-        font-family: var(--font-sans);
+        padding: 0.7rem 1.5rem;
+        font-family: var(--font-paragraphs);
         text-decoration: none;
         display: inline-block;
-        border: 2px solid transparent;
         border-radius: $border-radius;
+        letter-spacing: 1.3px;
     }
     
-@mixin outline(
-    $background: transparent,
-    $color: var(--color-accent-400),
-    $border-radius: var(--border-radius),
-    $border-color: var(--color-accent-400)
+    @mixin outline(
+        $background: transparent,
+        $color: var(--color-black),
+        $border-radius: var(--border-radius),
+        $border-color: var(--color-grey)
     ) {
         background-color: $background;
         color: $color;
-        padding: 1rem 2rem;
-        font-family: var(--font-sans);
+        padding: 0.7rem 1.5rem;
+        font-family: var(--font-paragraphs);
         text-decoration: none;
         display: inline-block;
         border: 2px solid $border-color;
         border-radius: $border-radius;
+        letter-spacing: 1.3px;
     }
+
+    

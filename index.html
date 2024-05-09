@@ -17,6 +17,7 @@
     <!-- JavaScripts -->
     <script src="src/scss/js/menu.js" defer></script>
     <script src="src/scss/js/scroll.js" defer></script>
+    <script src="src/scss/js/responsive.js" defer></script>
 </head>
 <body>
 <div class="container">
@@ -29,33 +30,38 @@
             <div class="site-header__navigation">
     
                 <!-- Logo -->
-                <div class="logotype">
-                    <a href="" class="branding">
+                <a href="" class="branding">
+                    <div class="logotype">
                         <svg width="220" height="20" viewBox="0 0 220 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_3_219)">
-                            <path d="M16.3946 17.126H12.8717L2.20544 4.20287H2.15406V17.126H0V2.87276H3.54761L14.1898 15.891H14.2405V2.87276H16.3946V17.126Z" fill="#008DA8"/>
-                            <path d="M27.012 2.75922C31.7502 2.79727 33.1945 3.97516 33.1945 7.54814V12.6225C33.1945 15.9868 31.5733 17.2408 27.012 17.2408H24.4527C19.8927 17.2408 18.2702 15.9862 18.2702 12.6225V7.54814C18.2702 3.97516 19.7139 2.79727 24.4527 2.75922L27.012 2.75922ZM24.4527 4.18384C21.2603 4.18384 20.4243 4.77374 20.4243 7.54814V12.6225C20.4243 15.454 21.6649 15.7959 24.4527 15.8143H27.012C29.7998 15.7959 31.0411 15.454 31.0411 12.6225V7.54814C31.0411 4.77374 30.2051 4.18384 27.012 4.18384H24.4527Z" fill="#008DA8"/>
-                            <path d="M37.1988 17.126H35.0447V2.87276H43.812C47.9165 2.87276 49.7166 3.72905 49.7166 6.97918C49.7166 8.97404 49.4121 10.4557 46.3973 10.7418V10.7792C48.5248 10.894 49.4635 11.8062 49.4635 13.345V17.1273H47.3088V14.1048C47.3088 12.2996 46.7265 11.4256 44.1164 11.4256H37.1988V17.126ZM43.8373 9.99969C47.1566 9.92358 47.5625 9.16369 47.5625 6.80665C47.5625 4.98242 47.2321 4.29865 43.8373 4.29865H37.1988V9.99969H43.8373Z" fill="#008DA8"/>
-                            <path d="M51.5916 2.87276H60.8403C63.1459 2.87276 67.3519 3.1011 67.3519 8.36575V11.7668C67.3519 13.1731 67.0487 17.126 61.3471 17.126H51.5916V2.87276ZM60.8403 15.7007C64.641 15.7007 65.1484 14.0275 65.1985 11.482V7.73716C65.1985 6.93985 64.8179 4.29865 61.1948 4.29865H53.745V15.7014L60.8403 15.7007Z" fill="#008DA8"/>
-                            <path d="M71.2807 2.87276H69.1266V17.1266H71.2807V2.87276Z" fill="#008DA8"/>
-                            <path d="M78.6037 17.2402C75.1315 17.2402 73.0796 15.6062 73.0796 12.7557V7.24368C73.0796 3.21401 76.3989 2.75922 81.0102 2.75922H82.7843C86.762 2.75922 87.9785 4.05064 87.9785 6.86374V7.32043H85.8245V6.92082C85.8245 4.92533 85.2669 4.18448 82.4792 4.18448H81.2639C76.8048 4.18448 75.233 4.58345 75.233 7.18786V11.1027C75.233 14.3529 75.41 15.8149 79.009 15.8149H81.5677C85.0138 15.8149 86.0776 15.4546 86.0776 13.4204V12.28H88.2316V13.6114C88.2316 16.8792 85.4439 17.2408 81.6432 17.2408L78.6037 17.2402Z" fill="#008DA8"/>
-                            <path d="M110.582 17.126H107.313L102.347 4.29865H102.295L97.2532 17.126H94.0354L88.2075 2.87276H90.4117L95.5806 15.891H95.6319L100.75 2.87276H103.918L108.985 15.891H109.036L114.332 2.87276H116.562L110.582 17.126Z" fill="#54B948"/>
-                            <path d="M119.426 9.14403H129.055V10.4748H119.426V15.7001H129.486V17.1254H117.273V2.87276H129.486V4.29865H119.426V9.14403Z" fill="#54B948"/>
-                            <path d="M133.717 15.7007H143.397V17.126H131.565V2.87276H133.717V15.7007Z" fill="#54B948"/>
-                            <path d="M147.224 15.7007H156.904V17.126H145.071V2.87276H147.224V15.7007Z" fill="#54B948"/>
-                            <path d="M174.92 17.126H171.398L160.73 4.20287H160.679V17.126H158.527V2.87276H162.073L172.716 15.891H172.767V2.87276H174.92V17.126Z" fill="#54B948"/>
-                            <path d="M179.077 9.14403H188.704V10.4748H179.077V15.7001H189.136V17.1254H176.922V2.87276H189.136V4.29865H179.077V9.14403Z" fill="#54B948"/>
-                            <path d="M190.353 6.90116C190.353 3.1011 192.685 2.75922 197.372 2.75922C201.476 2.75922 204.441 2.89242 204.213 6.76859H202.059C201.958 4.27899 201.324 4.18384 197.295 4.18384C193.089 4.18384 192.506 4.58345 192.506 6.55928C192.506 9.27659 194.229 9.04952 197.777 9.12563C202.287 9.31528 204.567 9.22014 204.567 13.0779C204.567 17.1076 202.034 17.2402 197.245 17.2402C192.405 17.2402 189.896 16.8025 190.302 12.6789H192.456C192.406 15.8136 193.216 15.8136 197.245 15.8136C201.3 15.8136 202.414 15.8136 202.414 13.0208C202.414 10.3035 200.792 10.7596 197.321 10.5496C193.571 10.3232 190.353 10.6644 190.353 6.90116Z" fill="#54B948"/>
-                            <path d="M205.785 6.90116C205.785 3.1011 208.116 2.75922 212.803 2.75922C216.908 2.75922 219.873 2.89242 219.645 6.76859H217.491C217.39 4.27899 216.756 4.18384 212.727 4.18384C208.521 4.18384 207.938 4.58345 207.938 6.55928C207.938 9.27659 209.662 9.04952 213.209 9.12563C217.718 9.31528 219.999 9.22014 219.999 13.0779C219.999 17.1076 217.466 17.2402 212.677 17.2402C207.837 17.2402 205.329 16.8025 205.734 12.6789H207.887C207.838 15.8136 208.648 15.8136 212.678 15.8136C216.732 15.8136 217.846 15.8136 217.846 13.0208C217.846 10.3035 216.224 10.7596 212.753 10.5496C209.004 10.3232 205.785 10.6644 205.785 6.90116Z" fill="#54B948"/>
+                            <g clip-path="url(#clip0_3_218)">
+                            <g clip-path="url(#clip1_3_218)">
+                            <path d="M16.3946 17.126H12.8717L2.20544 4.20287H2.15406V17.126H0V2.87276H3.54761L14.1898 15.891H14.2405V2.87276H16.3946V17.126Z" fill="white"/>
+                            <path d="M27.012 2.75922C31.7502 2.79727 33.1945 3.97516 33.1945 7.54814V12.6225C33.1945 15.9868 31.5733 17.2408 27.012 17.2408H24.4527C19.8927 17.2408 18.2702 15.9862 18.2702 12.6225V7.54814C18.2702 3.97516 19.7139 2.79727 24.4527 2.75922L27.012 2.75922ZM24.4527 4.18384C21.2603 4.18384 20.4243 4.77374 20.4243 7.54814V12.6225C20.4243 15.454 21.6649 15.7959 24.4527 15.8143H27.012C29.7998 15.7959 31.0411 15.454 31.0411 12.6225V7.54814C31.0411 4.77374 30.2051 4.18384 27.012 4.18384H24.4527Z" fill="white"/>
+                            <path d="M37.1988 17.126H35.0447V2.87276H43.812C47.9165 2.87276 49.7166 3.72905 49.7166 6.97918C49.7166 8.97404 49.4121 10.4557 46.3973 10.7418V10.7792C48.5248 10.894 49.4635 11.8062 49.4635 13.345V17.1273H47.3088V14.1048C47.3088 12.2996 46.7265 11.4256 44.1164 11.4256H37.1988V17.126ZM43.8373 9.99969C47.1566 9.92358 47.5625 9.16369 47.5625 6.80665C47.5625 4.98242 47.2321 4.29865 43.8373 4.29865H37.1988V9.99969H43.8373Z" fill="white"/>
+                            <path d="M51.5916 2.87276H60.8403C63.1459 2.87276 67.3519 3.1011 67.3519 8.36575V11.7668C67.3519 13.1731 67.0487 17.126 61.3471 17.126H51.5916V2.87276ZM60.8403 15.7007C64.641 15.7007 65.1484 14.0275 65.1985 11.482V7.73716C65.1985 6.93985 64.8179 4.29865 61.1948 4.29865H53.745V15.7014L60.8403 15.7007Z" fill="white"/>
+                            <path d="M71.2807 2.87276H69.1266V17.1266H71.2807V2.87276Z" fill="white"/>
+                            <path d="M78.6037 17.2402C75.1315 17.2402 73.0796 15.6062 73.0796 12.7557V7.24368C73.0796 3.21401 76.3989 2.75922 81.0102 2.75922H82.7843C86.762 2.75922 87.9785 4.05064 87.9785 6.86374V7.32043H85.8245V6.92082C85.8245 4.92533 85.2669 4.18448 82.4792 4.18448H81.2639C76.8048 4.18448 75.233 4.58345 75.233 7.18786V11.1027C75.233 14.3529 75.41 15.8149 79.009 15.8149H81.5677C85.0138 15.8149 86.0776 15.4546 86.0776 13.4204V12.28H88.2316V13.6114C88.2316 16.8792 85.4439 17.2408 81.6432 17.2408L78.6037 17.2402Z" fill="white"/>
+                            <path d="M110.582 17.126H107.313L102.347 4.29865H102.295L97.2532 17.126H94.0354L88.2075 2.87276H90.4117L95.5806 15.891H95.6319L100.75 2.87276H103.918L108.985 15.891H109.036L114.332 2.87276H116.562L110.582 17.126Z" fill="white"/>
+                            <path d="M119.426 9.14403H129.055V10.4748H119.426V15.7001H129.486V17.1254H117.273V2.87276H129.486V4.29865H119.426V9.14403Z" fill="white"/>
+                            <path d="M133.717 15.7007H143.397V17.126H131.565V2.87276H133.717V15.7007Z" fill="white"/>
+                            <path d="M147.224 15.7007H156.904V17.126H145.071V2.87276H147.224V15.7007Z" fill="white"/>
+                            <path d="M174.92 17.126H171.398L160.73 4.20287H160.679V17.126H158.527V2.87276H162.073L172.716 15.891H172.767V2.87276H174.92V17.126Z" fill="white"/>
+                            <path d="M179.077 9.14403H188.704V10.4748H179.077V15.7001H189.136V17.1254H176.922V2.87276H189.136V4.29865H179.077V9.14403Z" fill="white"/>
+                            <path d="M190.353 6.90116C190.353 3.1011 192.685 2.75922 197.372 2.75922C201.476 2.75922 204.441 2.89242 204.213 6.76859H202.059C201.958 4.27899 201.324 4.18384 197.295 4.18384C193.089 4.18384 192.506 4.58345 192.506 6.55928C192.506 9.27659 194.229 9.04952 197.777 9.12563C202.287 9.31528 204.567 9.22014 204.567 13.0779C204.567 17.1076 202.034 17.2402 197.245 17.2402C192.405 17.2402 189.896 16.8025 190.302 12.6789H192.456C192.406 15.8136 193.216 15.8136 197.245 15.8136C201.3 15.8136 202.414 15.8136 202.414 13.0208C202.414 10.3035 200.792 10.7596 197.321 10.5496C193.571 10.3232 190.353 10.6644 190.353 6.90116Z" fill="white"/>
+                            <path d="M205.785 6.90116C205.785 3.1011 208.116 2.75922 212.803 2.75922C216.908 2.75922 219.873 2.89242 219.645 6.76859H217.491C217.39 4.27899 216.756 4.18384 212.727 4.18384C208.521 4.18384 207.938 4.58345 207.938 6.55928C207.938 9.27659 209.662 9.04952 213.209 9.12563C217.718 9.31528 219.999 9.22014 219.999 13.0779C219.999 17.1076 217.466 17.2402 212.677 17.2402C207.837 17.2402 205.329 16.8025 205.734 12.6789H207.887C207.838 15.8136 208.648 15.8136 212.678 15.8136C216.732 15.8136 217.846 15.8136 217.846 13.0208C217.846 10.3035 216.224 10.7596 212.753 10.5496C209.004 10.3232 205.785 10.6644 205.785 6.90116Z" fill="white"/>
+                            </g>
                             </g>
                             <defs>
-                            <clipPath id="clip0_3_219">
+                            <clipPath id="clip0_3_218">
+                            <rect width="220" height="20" fill="white"/>
+                            </clipPath>
+                            <clipPath id="clip1_3_218">
                             <rect width="220" height="14.4816" fill="white" transform="translate(0 2.75922)"/>
                             </clipPath>
                             </defs>
-                        </svg>                            
-                    </a>
-                </div>
+                        </svg>                                                  
+                    </div>
+                </a>
             
                 <!-- Menu (Desktop) -->
                 <div class="menu__container">
@@ -72,138 +78,253 @@
                         </ul>
                     </nav>
 
-                    <!-- Log In Button -->
-                    <a href="" class="login">
-                        <div class="login__container">
-
-                            <div class="login__lockicon">
-                                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.67005 0C13.1145 0 15.9079 2.83587 15.9079 6.33372V7.48538H17.1554C17.8439 7.48538 18.403 8.04444 18.403 8.73294V18.7135C18.403 19.4019 17.8439 19.961 17.1554 19.961H2.18467C1.49617 19.961 0.937103 19.4019 0.937103 18.7135V8.73294C0.937103 8.04444 1.49617 7.48538 2.18467 7.48538H3.43223V6.33372C3.43223 2.83587 6.2256 0 9.67005 0ZM4.67979 6.33372V7.48538H14.6603V6.33372C14.6603 3.52943 12.4221 1.24756 9.67005 1.24756C6.918 1.24756 4.67979 3.52943 4.67979 6.33372ZM17.1554 18.7135V8.73294H2.18467V18.7135H17.1554ZM12.1652 13.7232C12.1652 15.1018 11.0486 16.2183 9.67005 16.2183C8.29149 16.2183 7.17492 15.1018 7.17492 13.7232C7.17492 12.3446 8.29149 11.2281 9.67005 11.2281C11.0486 11.2281 12.1652 12.3446 12.1652 13.7232ZM9.67005 14.9708C10.3574 14.9708 10.9176 14.4105 10.9176 13.7232C10.9176 13.0359 10.3574 12.4756 9.67005 12.4756C8.98272 12.4756 8.42248 13.0359 8.42248 13.7232C8.42248 14.4105 8.98272 14.9708 9.67005 14.9708Z" fill="black"/>
-                                </svg>
-                            </div>
-
-                            <div class="login__text">Logga in</div>
-
-                            <div class="login__arrowicon">
-                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.79045 0.608181C9.03373 0.364906 9.42944 0.364906 9.67272 0.608181C9.91599 0.851456 9.91599 1.24678 9.67272 1.49005L5.62671 5.53606C5.50429 5.65847 5.34484 5.71812 5.18383 5.71812C5.02398 5.71929 4.86336 5.65847 4.74094 5.53606L0.694938 1.49005C0.451663 1.24678 0.451663 0.851456 0.694938 0.608181C0.938213 0.364906 1.33392 0.364906 1.5772 0.608181L5.18383 4.21481L8.79045 0.608181Z" fill="black"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Header Button CTA -->
-                    <a href="" class="button">
-                        <div class="button__container">
-                            <div class="button__text">Bli medlem</div>
-                        </div>
-                    </a>
+                    <div class="header-buttons__container">
+                        <!-- Log In Button -->
+                        <button class="login">
+                            <div class="login__container">
     
+                                <div class="login__lockicon">
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_3_249)">
+                                        <path d="M10.67 0C14.1145 0 16.9079 2.83587 16.9079 6.33372V7.48538H18.1554C18.8439 7.48538 19.403 8.04444 19.403 8.73294V18.7135C19.403 19.4019 18.8439 19.961 18.1554 19.961H3.18467C2.49617 19.961 1.9371 19.4019 1.9371 18.7135V8.73294C1.9371 8.04444 2.49617 7.48538 3.18467 7.48538H4.43223V6.33372C4.43223 2.83587 7.2256 0 10.67 0ZM5.67979 6.33372V7.48538H15.6603V6.33372C15.6603 3.52943 13.4221 1.24756 10.67 1.24756C7.918 1.24756 5.67979 3.52943 5.67979 6.33372ZM18.1554 18.7135V8.73294H3.18467V18.7135H18.1554ZM13.1652 13.7232C13.1652 15.1018 12.0486 16.2183 10.67 16.2183C9.29149 16.2183 8.17492 15.1018 8.17492 13.7232C8.17492 12.3446 9.29149 11.2281 10.67 11.2281C12.0486 11.2281 13.1652 12.3446 13.1652 13.7232ZM10.67 14.9708C11.3574 14.9708 11.9176 14.4105 11.9176 13.7232C11.9176 13.0359 11.3574 12.4756 10.67 12.4756C9.98272 12.4756 9.42248 13.0359 9.42248 13.7232C9.42248 14.4105 9.98272 14.9708 10.67 14.9708Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_3_249">
+                                        <rect width="20" height="20" fill="white" transform="matrix(1 0 0 -1 0.670044 20)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                                   
+                                </div>
+    
+                                <div class="login__text">Logga in</div>
+    
+                                <div class="login__arrowicon">
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.7905 8.60818C15.0337 8.36491 15.4294 8.36491 15.6727 8.60818C15.916 8.85146 15.916 9.24678 15.6727 9.49005L11.6267 13.5361C11.5043 13.6585 11.3448 13.7181 11.1838 13.7181C11.024 13.7193 10.8634 13.6585 10.7409 13.5361L6.69494 9.49005C6.45166 9.24678 6.45166 8.85146 6.69494 8.60818C6.93821 8.36491 7.33392 8.36491 7.5772 8.60818L11.1838 12.2148L14.7905 8.60818Z" fill="white"/>
+                                    </svg>                                                                                                                                                                                             
+                                </div>
+                            </div>
+                        </button>
+    
+                        <!-- Header Button CTA -->
+                        <div class="header__button">
+                            <a href="" class="button__primary">
+                                <div class="button__container">
+                                    <div class="button__text">Bli medlem</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="site-header__navigation-responsive">
+
+                <!-- Login Lockicon -->
+                <div class="resp-login__lockicon">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3_249)">
+                        <path d="M10.67 0C14.1145 0 16.9079 2.83587 16.9079 6.33372V7.48538H18.1554C18.8439 7.48538 19.403 8.04444 19.403 8.73294V18.7135C19.403 19.4019 18.8439 19.961 18.1554 19.961H3.18467C2.49617 19.961 1.9371 19.4019 1.9371 18.7135V8.73294C1.9371 8.04444 2.49617 7.48538 3.18467 7.48538H4.43223V6.33372C4.43223 2.83587 7.2256 0 10.67 0ZM5.67979 6.33372V7.48538H15.6603V6.33372C15.6603 3.52943 13.4221 1.24756 10.67 1.24756C7.918 1.24756 5.67979 3.52943 5.67979 6.33372ZM18.1554 18.7135V8.73294H3.18467V18.7135H18.1554ZM13.1652 13.7232C13.1652 15.1018 12.0486 16.2183 10.67 16.2183C9.29149 16.2183 8.17492 15.1018 8.17492 13.7232C8.17492 12.3446 9.29149 11.2281 10.67 11.2281C12.0486 11.2281 13.1652 12.3446 13.1652 13.7232ZM10.67 14.9708C11.3574 14.9708 11.9176 14.4105 11.9176 13.7232C11.9176 13.0359 11.3574 12.4756 10.67 12.4756C9.98272 12.4756 9.42248 13.0359 9.42248 13.7232C9.42248 14.4105 9.98272 14.9708 10.67 14.9708Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_3_249">
+                        <rect width="20" height="20" fill="white" transform="matrix(1 0 0 -1 0.670044 20)"/>
+                        </clipPath>
+                        </defs>
+                    </svg>                                   
+                </div>
+
+                <!-- Logo -->
+                <a href="" class="branding">
+                    <div class="resp-logotype">
+                        <svg width="220" height="20" viewBox="0 0 220 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3_218)">
+                            <g clip-path="url(#clip1_3_218)">
+                            <path d="M16.3946 17.126H12.8717L2.20544 4.20287H2.15406V17.126H0V2.87276H3.54761L14.1898 15.891H14.2405V2.87276H16.3946V17.126Z" fill="white"/>
+                            <path d="M27.012 2.75922C31.7502 2.79727 33.1945 3.97516 33.1945 7.54814V12.6225C33.1945 15.9868 31.5733 17.2408 27.012 17.2408H24.4527C19.8927 17.2408 18.2702 15.9862 18.2702 12.6225V7.54814C18.2702 3.97516 19.7139 2.79727 24.4527 2.75922L27.012 2.75922ZM24.4527 4.18384C21.2603 4.18384 20.4243 4.77374 20.4243 7.54814V12.6225C20.4243 15.454 21.6649 15.7959 24.4527 15.8143H27.012C29.7998 15.7959 31.0411 15.454 31.0411 12.6225V7.54814C31.0411 4.77374 30.2051 4.18384 27.012 4.18384H24.4527Z" fill="white"/>
+                            <path d="M37.1988 17.126H35.0447V2.87276H43.812C47.9165 2.87276 49.7166 3.72905 49.7166 6.97918C49.7166 8.97404 49.4121 10.4557 46.3973 10.7418V10.7792C48.5248 10.894 49.4635 11.8062 49.4635 13.345V17.1273H47.3088V14.1048C47.3088 12.2996 46.7265 11.4256 44.1164 11.4256H37.1988V17.126ZM43.8373 9.99969C47.1566 9.92358 47.5625 9.16369 47.5625 6.80665C47.5625 4.98242 47.2321 4.29865 43.8373 4.29865H37.1988V9.99969H43.8373Z" fill="white"/>
+                            <path d="M51.5916 2.87276H60.8403C63.1459 2.87276 67.3519 3.1011 67.3519 8.36575V11.7668C67.3519 13.1731 67.0487 17.126 61.3471 17.126H51.5916V2.87276ZM60.8403 15.7007C64.641 15.7007 65.1484 14.0275 65.1985 11.482V7.73716C65.1985 6.93985 64.8179 4.29865 61.1948 4.29865H53.745V15.7014L60.8403 15.7007Z" fill="white"/>
+                            <path d="M71.2807 2.87276H69.1266V17.1266H71.2807V2.87276Z" fill="white"/>
+                            <path d="M78.6037 17.2402C75.1315 17.2402 73.0796 15.6062 73.0796 12.7557V7.24368C73.0796 3.21401 76.3989 2.75922 81.0102 2.75922H82.7843C86.762 2.75922 87.9785 4.05064 87.9785 6.86374V7.32043H85.8245V6.92082C85.8245 4.92533 85.2669 4.18448 82.4792 4.18448H81.2639C76.8048 4.18448 75.233 4.58345 75.233 7.18786V11.1027C75.233 14.3529 75.41 15.8149 79.009 15.8149H81.5677C85.0138 15.8149 86.0776 15.4546 86.0776 13.4204V12.28H88.2316V13.6114C88.2316 16.8792 85.4439 17.2408 81.6432 17.2408L78.6037 17.2402Z" fill="white"/>
+                            <path d="M110.582 17.126H107.313L102.347 4.29865H102.295L97.2532 17.126H94.0354L88.2075 2.87276H90.4117L95.5806 15.891H95.6319L100.75 2.87276H103.918L108.985 15.891H109.036L114.332 2.87276H116.562L110.582 17.126Z" fill="white"/>
+                            <path d="M119.426 9.14403H129.055V10.4748H119.426V15.7001H129.486V17.1254H117.273V2.87276H129.486V4.29865H119.426V9.14403Z" fill="white"/>
+                            <path d="M133.717 15.7007H143.397V17.126H131.565V2.87276H133.717V15.7007Z" fill="white"/>
+                            <path d="M147.224 15.7007H156.904V17.126H145.071V2.87276H147.224V15.7007Z" fill="white"/>
+                            <path d="M174.92 17.126H171.398L160.73 4.20287H160.679V17.126H158.527V2.87276H162.073L172.716 15.891H172.767V2.87276H174.92V17.126Z" fill="white"/>
+                            <path d="M179.077 9.14403H188.704V10.4748H179.077V15.7001H189.136V17.1254H176.922V2.87276H189.136V4.29865H179.077V9.14403Z" fill="white"/>
+                            <path d="M190.353 6.90116C190.353 3.1011 192.685 2.75922 197.372 2.75922C201.476 2.75922 204.441 2.89242 204.213 6.76859H202.059C201.958 4.27899 201.324 4.18384 197.295 4.18384C193.089 4.18384 192.506 4.58345 192.506 6.55928C192.506 9.27659 194.229 9.04952 197.777 9.12563C202.287 9.31528 204.567 9.22014 204.567 13.0779C204.567 17.1076 202.034 17.2402 197.245 17.2402C192.405 17.2402 189.896 16.8025 190.302 12.6789H192.456C192.406 15.8136 193.216 15.8136 197.245 15.8136C201.3 15.8136 202.414 15.8136 202.414 13.0208C202.414 10.3035 200.792 10.7596 197.321 10.5496C193.571 10.3232 190.353 10.6644 190.353 6.90116Z" fill="white"/>
+                            <path d="M205.785 6.90116C205.785 3.1011 208.116 2.75922 212.803 2.75922C216.908 2.75922 219.873 2.89242 219.645 6.76859H217.491C217.39 4.27899 216.756 4.18384 212.727 4.18384C208.521 4.18384 207.938 4.58345 207.938 6.55928C207.938 9.27659 209.662 9.04952 213.209 9.12563C217.718 9.31528 219.999 9.22014 219.999 13.0779C219.999 17.1076 217.466 17.2402 212.677 17.2402C207.837 17.2402 205.329 16.8025 205.734 12.6789H207.887C207.838 15.8136 208.648 15.8136 212.678 15.8136C216.732 15.8136 217.846 15.8136 217.846 13.0208C217.846 10.3035 216.224 10.7596 212.753 10.5496C209.004 10.3232 205.785 10.6644 205.785 6.90116Z" fill="white"/>
+                            </g>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_3_218">
+                            <rect width="220" height="20" fill="white"/>
+                            </clipPath>
+                            <clipPath id="clip1_3_218">
+                            <rect width="220" height="14.4816" fill="white" transform="translate(0 2.75922)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                                                  
+                    </div>
+                </a>
+
                 <!-- Device Menu Button (1024px) -->
-                    <!-- <button class="menu-button">
-                        <svg width="26" height="26" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <button class="menu-button">
+                        <svg width="20" height="20" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2.8125 3H32.8125M2.8125 13H32.8125M2.8125 23H32.8125" stroke="white" stroke-width="4.42708" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </button> -->
-    
+                    </button>
             </div>
-        </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero__inner">
+       <!-- Device Menu (1024px) -->
+       <div class="device-menu">
 
-            <!-- Hero Content -->
-            <div class="hero__content">
-                <h1 class="hero__title">Sveriges bästa träning från 299kr</h1>
-                <p class="hero__paragraph">Alla har rätt till ett riktigt bra gym – oavsett vem du är, var du bor eller varför du tränar.            </p>
+            <div class="device-menu__search">
+                <input type="text" id="search-input" placeholder="Sök på nordicwellness.se">
+                <button id="search-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>                      
+                </button>
             </div>
 
-            <!-- Hero Button CTA -->
-            <a href="" class="button">
+            <nav class="responsive-menu">
+                <ul class="responsive-menu__list">
+                    <li class="responsive-menu__item"><a href="" class="responsive-menu__link">Träna</a></li>
+                    <li class="responsive-menu__item"><a href="" class="responsive-menu__link">Boka</a></li>
+                    <li class="responsive-menu__item"><a href="" class="responsive-menu__link">Klubbar</a></li>
+                    <li class="responsive-menu__item"><a href="" class="responsive-menu__link">Tjänster</a></li>
+                    <li class="responsive-menu__item"><a href="" class="responsive-menu__link">Priser</a></li>
+                    <li class="responsive-menu__item"><a href="" class="responsive-menu__link">Företag</a></li>
+                    <li class="responsive-menu__item"><a href="" class="responsive-menu__link">Webshop</a></li>
+                    <li class="responsive-menu__item"><a href="" class="responsive-menu__link">Padel</a></li>
+                </ul>
+            </nav>
+
+            <a href="" class="button__primary">
                 <div class="button__container">
                     <div class="button__text">Bli medlem</div>
                 </div>
             </a>
 
-            <div class="cards">
-                <div class="card">
-                    <h3 class="card__title">Träna på våra</h3>
-                    <p class="card__paragraph">312 klubbar</p>
-                    <span class="card__arrow">
-                        <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
-                            <g clip-path="url(#clip0_3_14)">
-                            <g clip-path="url(#clip1_3_14)">
-                            <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
-                            </g>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_3_14">
-                            <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
-                            </clipPath>
-                            <clipPath id="clip1_3_14">
-                            <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
-                            </clipPath>
-                            </defs>
-                        </svg>                                
-                    </span>
+        </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__inner">
+
+            <div class="hero__container">
+
+                <div class="hero__content-container">
+                    <!-- Hero Content -->
+                    <div class="hero__content">
+                        <h1 class="hero__title">Sveriges bästa träning från 299kr</h1>
+                        <p class="hero__paragraph">Alla har rätt till ett riktigt bra gym – oavsett vem du är, var du bor eller varför du tränar.            </p>
+        
+                        <!-- Hero Button CTA -->
+                        <a href="" class="button__primary">
+                            <div class="button__container">
+                                <div class="button__text">Bli medlem</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="card">
-                    <h3 class="card__title">Bli en av</h3>
-                    <p class="card__paragraph">500.000 medlemmar</p>
-                    <span class="card__arrow">
-                        <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
-                            <g clip-path="url(#clip0_3_14)">
-                            <g clip-path="url(#clip1_3_14)">
-                            <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
-                            </g>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_3_14">
-                            <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
-                            </clipPath>
-                            <clipPath id="clip1_3_14">
-                            <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
-                            </clipPath>
-                            </defs>
-                        </svg>                                
-                    </span>
-                </div>
-
-                <div class="card">
-                    <h3 class="card__title">Kom igång från</h3>
-                    <p class="card__paragraph">299kr/mån</p>
-                    <span class="card__arrow">
-                        <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
-                            <g clip-path="url(#clip0_3_14)">
-                            <g clip-path="url(#clip1_3_14)">
-                            <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
-                            </g>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_3_14">
-                            <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
-                            </clipPath>
-                            <clipPath id="clip1_3_14">
-                            <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
-                            </clipPath>
-                            </defs>
-                        </svg>                                
-                    </span>
-                </div>
             </div>
 
+            <div class="cards">
+
+                <a href="">
+                    <div class="card">
+                        <h3 class="card__title">Träna på våra</h3>
+                        <div class="card__container">
+                            <p class="card__paragraph">312 klubbar</p>
+                            <div class="card__arrow">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                    <g clip-path="url(#clip0_3_14)">
+                                        <g clip-path="url(#clip1_3_14)">
+                                            <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3_14">
+                                            <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                        </clipPath>
+                                        <clipPath id="clip1_3_14">
+                                            <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>                                
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="card">
+                        <h3 class="card__title">Bli en av</h3>
+                        <div class="card__container">
+                            <p class="card__paragraph">500.000 medlemmar</p>
+                            <div class="card__arrow">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                    <g clip-path="url(#clip0_3_14)">
+                                        <g clip-path="url(#clip1_3_14)">
+                                            <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3_14">
+                                            <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                        </clipPath>
+                                        <clipPath id="clip1_3_14">
+                                            <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>                                
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="card">
+                        <h3 class="card__title">Kom igång från</h3>
+                        <div class="card__container">
+                            <p class="card__paragraph">299kr/mån</p>
+                            <div class="card__arrow">
+                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                    <g clip-path="url(#clip0_3_14)">
+                                        <g clip-path="url(#clip1_3_14)">
+                                            <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3_14">
+                                            <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                        </clipPath>
+                                        <clipPath id="clip1_3_14">
+                                            <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>                                
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+                
         </div>
     </section>
 
     <a href="" class="banner">
-        <div class="banner__content">
-            <p class="banner__paragraph">Nu räknar vi ner dagarna för Göteborg, Jönköping och Karlstad - Se alla våra kommande klubböppningar med senaste inom träningsvärlden. Läs mer</p>
+        <div class="banner__inner">
+            <p class="banner__paragraph">Nu räknar vi ner dagarna för <b>Göteborg, Jönköping och Karlstad</b> - Se alla våra kommande klubböppningar med senaste inom träningsvärlden. <span class="underline">Läs mer</span></p>
             <div class="banner__arrow">
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="7" height="12" transform="translate(0.329956 0.5)" fill="url(#pattern0_3_37)"/>
@@ -218,11 +339,98 @@
         </div>
     </a>
 
+    <div class="main-cards__container">
+        <div class="main-cards">
+
+            <a href="">
+                <div class="main-card">
+                    <h3 class="main-card__title">Träna på våra</h3>
+                    <div class="main-card__container">
+                        <p class="main-card__paragraph">312 klubbar</p>
+                        <div class="main-card__arrow">
+                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                <g clip-path="url(#clip0_3_14)">
+                                    <g clip-path="url(#clip1_3_14)">
+                                        <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                    </g>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3_14">
+                                        <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                    </clipPath>
+                                    <clipPath id="clip1_3_14">
+                                        <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>                                
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="main-card">
+                    <h3 class="main-card__title">Bli en av</h3>
+                    <div class="main-card__container">
+                        <p class="main-card__paragraph">500.000 medlemmar</p>
+                        <div class="main-card__arrow">
+                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                <g clip-path="url(#clip0_3_14)">
+                                    <g clip-path="url(#clip1_3_14)">
+                                        <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                    </g>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3_14">
+                                        <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                    </clipPath>
+                                    <clipPath id="clip1_3_14">
+                                        <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>                                
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="main-card">
+                    <h3 class="main-card__title">Kom igång från</h3>
+                    <div class="main-card__container">
+                        <p class="main-card__paragraph">299kr/mån</p>
+                        <div class="main-card__arrow">
+                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                <g clip-path="url(#clip0_3_14)">
+                                    <g clip-path="url(#clip1_3_14)">
+                                        <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                    </g>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3_14">
+                                        <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                    </clipPath>
+                                    <clipPath id="clip1_3_14">
+                                        <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>                                
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
     <section class="main">
         <div class="main__inner">
 
             <div class="main__content">
-                <h2 class="main__title">Hela Sveriges träningsklubb</h2>
+                <h2 class="section__title main__title">Hela Sveriges träningsklubb</h2>
                 <p class="main__paragraph">Alla har rätt till ett riktigt bra gym – oavsett vem du är, var du bor eller varför du tränar. Med över 300 klubbar från Luleå till Ystad erbjuder vi därför det senaste inom träning och hälsa – till ett rimligt pris. Håll utkik, vi slår snart upp dörrarna till ytterligare klubbar och även i nya städer, kika under Kommande Klubbar om det är nära dig. Välkommen i klubben!</p>
             </div>
 
@@ -231,14 +439,14 @@
                     <img src="src/scss/assets/images/glass.jpg" alt="Image of protein ice-cream" class="main__article-image">
                     <h3 class="main__article-title">Proteinrik Solero glass</h3>
                     <p class="main__article-paragraph">Testa den här busenkla och proteinrika glassen redan idag.</p>
-                    <a href="" class="main__article-link">Läs mer</a>
+                    <a href="" class="button__secondary">Läs mer</a>
                 </article>
 
                 <article class="main__article">
                     <img src="src/scss/assets/images/karriar-foretag-2024.jpg" alt="Award for company of the year 2024" class="main__article-image">
-                    <h3 class="main__article-title">Proteinrik Solero glass</h3>
-                    <p class="main__article-paragraph">Testa den här busenkla och proteinrika glassen redan idag.</p>
-                    <a href="" class="main__article-link">Läs mer</a>
+                    <h3 class="main__article-title">Vinn hälsostipendium</h3>
+                    <p class="main__article-paragraph">Ta chansen att vinna Nordic Wellness Hälsostipendium + ett års gratis gymkort.</p>
+                    <a href="" class="button__secondary">Läs mer</a>
                 </article>
             </div>
             
@@ -254,16 +462,527 @@
                 </div>
 
                 <div class="supplements__content">
-                    <h3 class="supplements__title">Köp dina kosttillskott här</h3>
+                    <h3 class="section__title supplements__title">Köp dina kosttillskott här</h3>
                     <p class="supplements__paragraph">Nordic Wellness erbjuder hjälp med alla delar; Kunskap, träning, kost och återhämtning.</p>
-                    <a href="" class="supplements__button">Köp</a>
+                    <a href="" class="button__primary">
+                        <div class="button__container">
+                            <div class="button__text">Köp</div>
+                        </div>
+                    </a>
                 </div>
             </div>
 
         </div>
     </section>
 
-        
-    
+    <section class="article-news">
+        <div class="article-news__inner">
+
+            <h2 class="section__title article-news__title">Aktuellt</h2>
+
+            <div class="articles">
+                
+                <!-- 1 -->
+                <div class="article">
+                    <div class="article__content">
+                        <img class="article__image" src="src/scss/assets/images/magazine.jpg" alt="Nordic Wellness Magazine">
+                        <h4 class="article__title">Nordic Wellness Magazine</h4>
+                        <p class="article__paragraph">Ta del av nyheter, artiklar och annat material i vårat Magasin.</p>
+                    </div>
+                    <div class="article__button">
+                        <a href="" class="button__secondary">
+                            <div class="button__container">
+                                <div class="button__text">Läs mer</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="article">
+                    <div class="article__content">
+                        <img class="article__image" src="src/scss/assets/images/nocco.jpg" alt="Nordic Wellness Magazine">
+                        <h4 class="article__title">Månadens Erbjudande</h4>
+                        <p class="article__paragraph">Se vårt erbjudande under april månad.</p>
+                    </div>
+                    <div class="article__button">
+                        <a href="" class="button__secondary">
+                            <div class="button__container">
+                                <div class="button__text">Läs mer</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="article">
+                    <div class="article__content">
+                        <img class="article__image" src="src/scss/assets/images/padel.jpg" alt="Nordic Wellness Magazine">
+                        <h4 class="article__title">Nordic Wellness Padel</h4>
+                        <p class="article__paragraph">Som medlem hos Nordic Wellness har du alltid minst 20% rabatt på alla speltider.</p>
+                    </div>
+                    <div class="article__button">
+                        <a href="" class="button__secondary">
+                            <div class="button__container">
+                                <div class="button__text">Läs mer</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="article">
+                    <div class="article__content">
+                        <img class="article__image" src="src/scss/assets/images/gym.jpg" alt="Nordic Wellness Magazine">
+                        <h4 class="article__title">Köp annonsplatser på våra skärmar</h4>
+                        <p class="article__paragraph">På Nordic Wellness får du hög visningsfrekvens.</p>
+                    </div>
+                    <div class="article__button">
+                        <a href="" class="button__secondary">
+                            <div class="button__container">
+                                <div class="button__text">Läs mer</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="article">
+                    <div class="article__content">
+                        <img class="article__image" src="src/scss/assets/images/nextory.jpg" alt="Nordic Wellness Magazine">
+                        <h4 class="article__title">Medlemsförmåner</h4>
+                        <p class="article__paragraph">Som medlem på Nordic Wellness har du möjlighet att handla förmånligt hos våra partners.</p>
+                    </div>
+                    <div class="article__button">
+                        <a href="" class="button__secondary">
+                            <div class="button__container">
+                                <div class="button__text">Läs mer</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="article">
+                    <div class="article__content">
+                        <img class="article__image" src="src/scss/assets/images/mobile-app.jpg" alt="Nordic Wellness Magazine">
+                        <h4 class="article__title">Boka via vår app</h4>
+                        <p class="article__paragraph">Genom vår app får du tillgång till alla favoritpass och kan streama dem direkt till TV, dator, surfplatta eller mobil.</p>
+                    </div>
+                    <div class="article__button">
+                        <a href="" class="button__secondary">
+                            <div class="button__container">
+                                <div class="button__text">Läs mer</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="breakline"></div>
+        </div>
+    </section>
+
+    <section class="club-news">
+        <div class="club-news__inner">
+
+            <div class="club-news__headline">
+                <h2 class="section__title club-news__title">Klubbnyheter</h2>
+                <p class="club-news__paragraph">Nu lanserar vi ännu fler klubbar i Sverige utöver de vi nyligen lanserat. Se om något gym ligger nära dig!</p>
+            </div>
+
+            <div class="clubs">
+                
+                <!-- Right section -->
+                <div class="clubs__coming-soon">
+                    <div class="clubs__title">Kommande klubbar</div>
+
+                        <ul class="clubs__list">
+                            <!-- 1 -->
+                            <a href="">
+                                <li class="club">
+                                    <div class="club__grid-container">
+                                        <div class="club__title">Göteborg Gamlestaden</div>
+                                        <div class="club__date">Sep 2024</div>
+                                        <div class="club__arrow">
+                                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                                <g clip-path="url(#clip0_3_14)">
+                                                <g clip-path="url(#clip1_3_14)">
+                                                <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                                </g>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_3_14">
+                                                <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                                </clipPath>
+                                                <clipPath id="clip1_3_14">
+                                                <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+
+                            <!-- 2 -->
+                            <a href="">
+                            <li class="club">
+                                    <div class="club__grid-container">
+                                        <div class="club__title">Jönköping Strandängen</div>
+                                        <div class="club__date">Sep 2024</div>
+                                        <div class="club__arrow">
+                                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                                <g clip-path="url(#clip0_3_14)">
+                                                <g clip-path="url(#clip1_3_14)">
+                                                <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                                </g>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_3_14">
+                                                <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                                </clipPath>
+                                                <clipPath id="clip1_3_14">
+                                                <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+
+                            <!-- 3 -->
+                            <a href="">
+                            <li class="club">
+                                    <div class="club__grid-container">
+                                        <div class="club__title">Karlstad Hammarö</div>
+                                        <div class="club__date">Sep 2024</div>
+                                        <div class="club__arrow">
+                                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                                <g clip-path="url(#clip0_3_14)">
+                                                <g clip-path="url(#clip1_3_14)">
+                                                <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                                </g>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_3_14">
+                                                <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                                </clipPath>
+                                                <clipPath id="clip1_3_14">
+                                                <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+
+                            <!-- 4 -->
+                            <a href="">
+                            <li class="club">
+                                    <div class="club__grid-container">
+                                        <div class="club__title">Göteborg Gårda Torg</div>
+                                        <div class="club__date">Okt 2024</div>
+                                        <div class="club__arrow">
+                                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                                <g clip-path="url(#clip0_3_14)">
+                                                <g clip-path="url(#clip1_3_14)">
+                                                <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                                </g>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_3_14">
+                                                <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                                </clipPath>
+                                                <clipPath id="clip1_3_14">
+                                                <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+
+                            <!-- 5 -->
+                            <a href="">
+                            <li class="club">
+                                    <div class="club__grid-container">
+                                        <div class="club__title">Mölndal Pedagogen Park</div>
+                                        <div class="club__date">Nov 2024</div>
+                                        <div class="club__arrow">
+                                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                                <g clip-path="url(#clip0_3_14)">
+                                                <g clip-path="url(#clip1_3_14)">
+                                                <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                                </g>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_3_14">
+                                                <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                                </clipPath>
+                                                <clipPath id="clip1_3_14">
+                                                <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+
+                        <div class="club__button">                            
+                            <a href="" class="button__secondary">
+                                <div class="button__container">
+                                    <div class="button__text">Se alla kommande klubbar</div>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                
+                <!-- Left section -->
+                <div class="clubs__coming-soon">
+                    <div class="clubs__title">Senaste klubbar</div>
+
+                        <ul class="clubs__list">
+                            <!-- 1 -->
+                            <a href="">
+                            <li class="club">
+                                    <div class="club__container">
+                                        <div class="club__title">Solna Strand</div>
+                                        <div class="club__arrow">
+                                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                                <g clip-path="url(#clip0_3_14)">
+                                                <g clip-path="url(#clip1_3_14)">
+                                                <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                                </g>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_3_14">
+                                                <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                                </clipPath>
+                                                <clipPath id="clip1_3_14">
+                                                <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+
+                            <!-- 2 -->
+                            <a href="">
+                            <li class="club">
+                                    <div class="club__container">
+                                        <div class="club__title">Uppsala Rosendal</div>
+                                        <div class="club__arrow">
+                                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                                <g clip-path="url(#clip0_3_14)">
+                                                <g clip-path="url(#clip1_3_14)">
+                                                <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                                </g>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_3_14">
+                                                <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                                </clipPath>
+                                                <clipPath id="clip1_3_14">
+                                                <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+
+                            <!-- 3 -->
+                            <a href="">
+                            <li class="club">
+                                    <div class="club__container">
+                                        <div class="club__title">Borås Armbåga Padel</div>
+                                        <div class="club__arrow">
+                                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                                <g clip-path="url(#clip0_3_14)">
+                                                <g clip-path="url(#clip1_3_14)">
+                                                <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                                </g>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_3_14">
+                                                <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                                </clipPath>
+                                                <clipPath id="clip1_3_14">
+                                                <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+
+                            <!-- 4 -->
+                            <a href="">
+                            <li class="club">
+                                    <div class="club__container">
+                                        <div class="club__title">Frölunda Altplatsen</div>
+                                        <div class="club__arrow">
+                                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                                <g clip-path="url(#clip0_3_14)">
+                                                <g clip-path="url(#clip1_3_14)">
+                                                <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                                </g>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_3_14">
+                                                <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                                </clipPath>
+                                                <clipPath id="clip1_3_14">
+                                                <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+
+                            <!-- 5 -->
+                            <a href="">
+                            <li class="club">
+                                    <div class="club__container">
+                                        <div class="club__title">Selma Lagerlöf</div>
+                                        <div class="club__arrow">
+                                            <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="0.5" width="30" height="30" rx="15" fill="#54B747"/>
+                                                <g clip-path="url(#clip0_3_14)">
+                                                <g clip-path="url(#clip1_3_14)">
+                                                <path d="M15.342 9.8335L14.393 10.7765L18.451 14.8335H9V16.1655H18.451L14.393 20.2245L15.342 21.1675L21 15.5005L15.342 9.8335Z" fill="white"/>
+                                                </g>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_3_14">
+                                                <rect width="12" height="12" fill="white" transform="translate(9 9.5)"/>
+                                                </clipPath>
+                                                <clipPath id="clip1_3_14">
+                                                <rect width="12" height="11.333" fill="white" transform="translate(9 9.8335)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </li>
+                            </a>
+                        </ul>
+
+                        <div class="club__button">
+                            <a href="" class="button__secondary">
+                                <div class="button__container">
+                                    <div class="button__text">Se alla kommande klubbar</div>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="site-footer__inner">
+
+            <div class="site-footer__container">
+
+                <div class="footer__content">
+                    <h3 class="footer__titles">Om Nordic Wellness</h3>
+                    <p class="footer__ingress">Nordic Wellness – hela Sveriges träningsklubb.</p>
+                    <p class="footer__paragraph">
+                        Alla har rätt till ett riktigt bra gym – oavsett vem du är, var du bor eller varför du tränar. 
+                        Från Luleå till Ystad erbjuder vi därför det senaste inom träning och hälsa – till ett rimligt pris. Välkommen i klubben!
+                    </p>
+                    <a href="" class="footer__link">LÄS MER</a>
+                </div>
+
+                <div class="footer__links">
+
+                    <div class="customer-service">
+                        <h3 class="footer__titles">Kundservice</h3>
+                        <a href="" class="footer__link">Allmänna villkor</a>
+                        <a href="" class="footer__link">FAQ</a>
+                        <a href="" class="footer__link">Kundservice</a>
+                    </div>
+
+                    <div class="about-us">
+                        <h3 class="footer__titles">Om oss</h3>
+                        <a href="" class="footer__link">Kontakta oss</a>
+                        <a href="" class="footer__link">Mer om oss</a>
+                        <a href="" class="footer__link">Jobba hos oss</a>
+                        <a href="" class="footer__link">Våra partners</a>
+                        <a href="" class="footer__link">Vårt ansvar</a>
+                        <a href="" class="footer__link">Vi använder cookies</a>
+                        <a href="" class="footer__link">Pressrum</a>
+                        <a href="" class="footer__link">Lediga lokaler</a>
+                    </div>
+                    
+                    <div class="social">
+                        <h3 class="footer__titles">Följ oss</h3>
+                        
+                        <div class="social__links">
+                            <div class="instagram">
+                                <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3_52)">
+                                    <path d="M13.5 5.83789C12.2824 5.83868 11.0924 6.20042 10.0803 6.87737C9.06825 7.55432 8.27958 8.51611 7.814 9.64118C7.34841 10.7662 7.2268 12.0041 7.46453 13.1982C7.70227 14.3924 8.28868 15.4893 9.14965 16.3503C10.0106 17.2112 11.1075 17.7976 12.3017 18.0354C13.4958 18.2731 14.7337 18.1515 15.8587 17.6859C16.9838 17.2203 17.9456 16.4317 18.6225 15.4196C19.2995 14.4075 19.6612 13.2175 19.662 11.9999C19.6627 11.1905 19.5037 10.3889 19.1943 9.64102C18.8849 8.89311 18.431 8.21356 17.8587 7.64123C17.2863 7.06891 16.6068 6.61504 15.8589 6.30561C15.111 5.99617 14.3094 5.83724 13.5 5.83789ZM13.5 15.9929C12.7089 15.9929 11.9355 15.7583 11.2777 15.3188C10.6199 14.8792 10.1072 14.2545 9.80449 13.5236C9.50174 12.7927 9.42253 11.9885 9.57687 11.2125C9.73121 10.4366 10.1122 9.72388 10.6716 9.16447C11.231 8.60506 11.9437 8.22409 12.7196 8.06975C13.4956 7.91541 14.2998 7.99462 15.0307 8.29737C15.7616 8.60013 16.3864 9.11282 16.8259 9.77061C17.2654 10.4284 17.5 11.2018 17.5 11.9929C17.5 13.0538 17.0786 14.0712 16.3284 14.8213C15.5783 15.5715 14.5609 15.9929 13.5 15.9929Z" fill="white"/>
+                                    <path d="M18.448 0.0759766C16.24 -0.0240234 10.771 -0.0240234 8.56101 0.0759766C6.69365 0.0425844 4.88692 0.738944 3.52501 2.01698C1.21701 4.32498 1.51201 7.43498 1.51201 12C1.51201 16.668 1.25201 19.706 3.52501 21.979C5.84201 24.291 9.00001 23.988 13.5 23.988C18.124 23.988 19.72 23.988 21.355 23.358C23.578 22.495 25.255 20.508 25.42 16.939C25.52 14.73 25.52 9.26198 25.42 7.05198C25.22 2.83898 22.961 0.283977 18.444 0.0759766H18.448ZM21.948 20.448C20.435 21.961 18.336 21.826 13.48 21.826C8.48001 21.826 6.47501 21.9 5.01201 20.433C3.32701 18.756 3.63201 16.063 3.63201 11.98C3.63201 6.45498 3.06501 2.47998 8.61001 2.19198C9.88401 2.14698 10.259 2.13198 13.466 2.13198L13.511 2.16198C18.84 2.16198 23.021 1.60398 23.272 7.14798C23.329 8.41298 23.342 8.79298 23.342 11.995C23.342 16.937 23.435 18.954 21.948 20.448Z" fill="white"/>
+                                    <path d="M19.906 7.03376C20.7007 7.03376 21.345 6.3895 21.345 5.59476C21.345 4.80002 20.7007 4.15576 19.906 4.15576C19.1113 4.15576 18.467 4.80002 18.467 5.59476C18.467 6.3895 19.1113 7.03376 19.906 7.03376Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_3_52">
+                                    <rect width="24" height="24" fill="white" transform="translate(1.5)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg> 
+                            </div>
+
+                            <div class="facebook">
+                                <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3_59)">
+                                    <path d="M19.5229 0H16.4229C12.9229 0 10.6229 2.3 10.6229 5.9V8.6H7.52295C7.22295 8.6 7.02295 8.8 7.02295 9.1V13C7.02295 13.3 7.22295 13.5 7.52295 13.5H10.6229V23.5C10.6229 23.8 10.8229 24 11.1229 24H15.2229C15.5229 24 15.7229 23.8 15.7229 23.5V13.5H19.4229C19.7229 13.5 19.9229 13.3 19.9229 13V9.1C19.9229 8.8 19.7229 8.6 19.4229 8.6H15.7229V6.3C15.7229 5.2 16.0229 4.6 17.4229 4.6H19.5229C19.8229 4.6 20.0229 4.4 20.0229 4.1V0.5C20.0229 0.2 19.7229 0 19.5229 0Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_3_59">
+                                    <rect width="13" height="24" fill="white" transform="translate(7)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg> 
+                            </div>
+                        </div>
+
+                        <div class="download">
+                            <h3 class="footer__titles">Ladda ner vår app</h3>
+                            <a href="" class="footer__link">Download iOS App</a>
+                            <a href="" class="footer__link">Download Android App</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>   
 </body>
 </html>
