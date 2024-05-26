@@ -16,22 +16,19 @@ const headerScroll = () => {
         // Bakgrund och länkar
         if (currentScroll === 0) {
             // Om användaren är högst upp på sidan, ändra bakgrundsfärgen till transparent
-            header.style.backgroundColor = 'transparent';
+            // header.style.backgroundColor = 'transparent';
+            header.classList.remove('site-header--scroll')
             // Ändra textfärgen inuti login-knappen till vit
-            loginText.style.color = '#ffffff';
+
             // Ändra färgen på länkarna till vit
-            links.forEach(link => {
-                link.style.color = '#ffffff';
-            });
+
         } else {
             // Annars sätt bakgrundsfärgen till vit
-            header.style.backgroundColor = '#ffffff';
+            header.classList.add('site-header--scroll')
             // Ändra textfärgen inuti login-knappen till svart
-            loginText.style.color = '#000000';
+
             // Ändra färgen på länkarna till svart
-            links.forEach(link => {
-                link.style.color = '#000000';
-            });
+
         }
 
         // Logotyp och SVG element
@@ -125,14 +122,10 @@ const headerScroll = () => {
         // Header CTA
         if (currentScroll === 0) {
             // Om användaren är högst upp på sidan
-            headerButton.style.backgroundColor = 'transparent'; // Gör bakgrunden genomskinlig
-            headerButton.style.borderRadius = '50px'; // Anpassa border-radius
-            headerButton.style.border = '2px solid white';
+            headerButton.classList.remove('header__button--scroll')
         } else {
             // Annars, vid scrollning
-            headerButton.style.backgroundColor = '#54B948'; // Grön bakgrund
-            headerButton.style.borderRadius = '50px'; // Anpassa border-radius
-            headerButton.style.border = '2px solid white';
+            headerButton.classList.add('header__button--scroll')
         }
       
         lastScroll = currentScroll;

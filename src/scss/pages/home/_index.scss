@@ -2,6 +2,14 @@
 @use '../../components/buttons' as b;
 @use '../../utilities/responsive';
 
+.container {
+
+    &.menu-open {
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
 // BANNER
 .banner {
     background-color: var(--color-accent);
